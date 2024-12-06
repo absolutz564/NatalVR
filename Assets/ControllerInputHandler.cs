@@ -19,17 +19,14 @@ public class ControllerInputHandler : MonoBehaviour
             {
                 if (Input.GetKeyDown(key))
                 {
-                    Debug.Log("Tecla pressionada: " + key.ToString());
                     pressedKey = key.ToString();
                 }
             }
             Debug.Log(pressedKey);
 
             // Verifica se a tecla pressionada é o Joystick1Button2
-            if (!string.IsNullOrEmpty(pressedKey) && (pressedKey == "Joystick1Button2" || pressedKey == "Joystick2Button0"))
+            if (!string.IsNullOrEmpty(pressedKey) && (pressedKey == "Joystick1Button2" || pressedKey == "Joystick2Button0" || pressedKey == "Space"))
             {
-                // Ação a ser realizada quando o Joystick1Button2 for pressionado
-                Debug.Log("Joystick1Button2 pressionado!");
 
                 // Aqui você pode disparar o trigger do Animator e alterar o pai do GameObject
                 animator.SetTrigger("Init");
