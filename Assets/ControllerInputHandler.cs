@@ -26,7 +26,7 @@ public class ControllerInputHandler : MonoBehaviour
             Debug.Log(pressedKey);
 
             // Verifica se a tecla pressionada é o Joystick1Button2
-            if (!string.IsNullOrEmpty(pressedKey) && (pressedKey == "Joystick1Button2" || pressedKey == "Joystick2Button0"))
+            if (!string.IsNullOrEmpty(pressedKey) && (pressedKey == "Joystick1Button2" || pressedKey == "Joystick2Button0" || pressedKey == "X"))
             {
                 // Ação a ser realizada quando o Joystick1Button2 for pressionado
                 Debug.Log("Joystick1Button2 pressionado!");
